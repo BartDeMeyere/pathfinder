@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathFinder demo</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <header>
+        <div id="title">PathFinder</div>
+        <div id="title-info">Pathfinder and maze visualizer in javascript</div>
+    </header>
+    <nav class="ui-nav">
+
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn-grid">
+               Grid
+            </button>
+            <div id="dropdownmenu-grid" class="dropdown-content">
+                <a href="#">Reset grid</a>
+                <a href="#">Clear walls</a>
+                <a href="#">Create random walls</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn-maze">
+                maze
+            </button>
+            <div id="dropdownmenu-maze" class="dropdown-content">
+                <a href="#">Depth first search</a>
+                <a href="#">Recursive division</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn-solver">
+                Solve
+            </button>
+            <div id="dropdownmenu-solver" class="dropdown-content">
+                <a href="#">A*</a>
+            </div>
+        </div>
+    </nav>
+    <canvas id="myCanvas"></canvas>
+    <section id="output"></section>
+    <footer>&copy; 2026 - Bart De Meyere</footer>
+    <script src="jquery-4.0.0.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
